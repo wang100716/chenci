@@ -4,11 +4,10 @@
 <meta charset="utf-8">
 <title>网站首页</title>
 <style>
-.xl{list-style: none;}
-.lj{float:right;text-decoration: none;margin-left: 10px;margin-right: 50px;font-size: 200%;}
 a:visited{color:#27DF85}
 a:link{color:#1EEEA7}
-	body{
+	@media screen and (min-device-width:370px) and (max-device-width:500px){
+			body{
 		height: 90vh;
 		width: 100%;
 		margin: 0px;
@@ -16,6 +15,8 @@ a:link{color:#1EEEA7}
 		background:#F4BA42;
 		
 	}
+		.xl{list-style: none;}
+		.lj{float:right;text-decoration: none;margin-left: 10px;margin-right: 50px;font-size: 1.5rem;}
 	.zt{
 		display: flex;
 		flex-direction: column;
@@ -33,7 +34,7 @@ a:link{color:#1EEEA7}
 		display: flex;
         flex-direction: column;
         justify-content: center;
-	background:#32A5BF;
+		background:#32A5BF;
 	}
 	.zfy{
 		flex: 1;
@@ -55,11 +56,51 @@ a:link{color:#1EEEA7}
 		font-size: 200%;
 		color: #F2A312;
 	}
+		
+	}
+	
+	@media screen and (min-device-width:501px) and (max-device-width:2000px){
+			.zt{
+		display: flex;
+		flex-direction: column;
+	    }
+		.kt{
+			
+		}
+		.sm{
+			text-align: center;
+			color:#ED6A00;
+			font-size: 2rem;
+			padding-bottom: 5px;
+		}
+		html{
+			font: 20px;
+		}
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.xl{list-style: none;}
+		.lj{float:right;text-decoration: none;margin-left: 10px;margin-right: 50px;font-size: 1.5rem;}
+		.dh{
+			background-color: #258DBA;
+		}
+		.zfy{
+			font-size: 1.5rem;
+			text-align: center;
+			color:#ED0B23;
+			padding-bottom: 5px;
+			padding-top: 5px;
+		}
+		.yy{
+			text-align: center;
+		}
+		.zt{
+			background-color:#FFB700;
+		}
+	}
 </style>
 </head>
-<script>
-	alert("欢迎访问此网站")
-</script>
 <body class="zt">
 	<div class="kt">
 		<p class="sm">这是一个只属于你的网站</p>
@@ -80,5 +121,13 @@ a:link{color:#1EEEA7}
 	<div class="yy">
 		<audio src="卓依婷 - 祝你生日快乐.mp3" loop controls id="yy"></audio>
 	</div>
+<script>
+	var mz = prompt("请输入名字");
+	if (mz == "徐文慧") {
+		alert("生日快乐");
+	} else {
+		alert("欢迎访问此网站")
+	}
+</script>
 </body>
 </html>
