@@ -39,11 +39,53 @@ a:link{color:#1EEEA7}
 	.zfy{
 		flex: 1;
 		display: flex;
-        flex-direction: column;
-        justify-content: center;
 		text-align: center;
 		font-size: 200%;
 		color: #F38B00;
+		width: 640px;
+		animation: xwh 4s infinite 1s
+	}
+	.zf{width: 160px;
+		overflow: hidden;
+		align-self: center;
+		}
+		@keyframes xwh {
+			25%{
+				margin-left: -160px;
+			}
+			50%{
+				margin-left: -320px;
+			}
+			75%{
+				margin-left: -480px;
+			}
+			100%{
+				margin-left: 0px;
+			}
+		}
+	.zfyz{float: left;
+		width: 160px;
+		height: 160px;
+		color:#8609EB;
+			
+	}
+	.zfyz1{float: left;
+		width: 160px;
+		height: 160px;
+		color:#F11216;
+			
+	}
+	.zfyz2{float: left;
+		width: 160px;
+		height: 160px;
+		color:#FD0092;
+			
+	}
+	.zfyz3{float: left;
+		width: 160px;
+		height: 160px;
+		color:#FF7E00;
+			
 	}
 	.tp{
 		flex: 3;
@@ -91,6 +133,9 @@ a:link{color:#1EEEA7}
 			color:#ED0B23;
 			padding-bottom: 5px;
 			padding-top: 5px;
+			width: 25px;
+			float: inherit;
+			height: 25px;
 		}
 		.yy{
 			text-align: center;
@@ -112,8 +157,13 @@ a:link{color:#1EEEA7}
 		    <li><a class="lj" href="index.html">网站首页</a></li>
 		</ul>
 	</div>
-	<div class="zfy">
-		<p>生日快乐</p>
+	<div class="zf">
+	    <div class="zfy">
+		    <p class="zfyz">生日快乐</p>
+			<p class="zfyz1">生日快乐</p>
+			<p class="zfyz2">生日快乐</p>
+			<p class="zfyz3">生日快乐</p>
+		</div>
 	</div>
 	<div class="tp">
 		<img class="tpbj" width="100%" src="生日.png"/>
@@ -126,7 +176,7 @@ a:link{color:#1EEEA7}
 	if (mz == "徐文慧") {
 		alert("生日快乐");
 	} else {
-		alert("欢迎访问此网站")
+		alert("生日快乐")
 	}
 </script>
 </body>
